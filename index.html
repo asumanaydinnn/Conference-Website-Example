@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React Developers Conference</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">ABOUT</a>
+      </li>
+      <li>
+        <a href="index.html#cardcollection">SPEAKERS</a>
+      </li>
+      <li>
+        <a href="index.html#timetable">SCHEDULE</a>
+      </li>
+      <li>
+        <a href="index.html">REGISTER</a>
+      </li>
+      <li>
+        <a href="index.html">LOCATIONS</a>
+      </li>
+      <li>
+        <a href="index.html">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <h1>{&lt; React Developers Annual Conference &gt;}</h1>
+    <div id="myborder"></div>
+    <section class="two_columns">
+      <p class="sub_header">&lt;div&gt; Welcome to the annual ReactJS Conference where we discuss the improvements and updates on subject with valuable speakers. &lt;/div&gt;</p>
+      <section class="two_columns_dates">
+        <p>
+          <i class="fa fa-calendar" style="color: rgb(255, 255, 255);"></i>
+          <span class="bold_text">Jan 3, 2022.</span>
+        </p>
+        <br />
+        <p>
+          <span class="bold_text"> 10:00 - 14:00</span>
+        </p>
+        <p>
+          <i class="fa fa-map-marker" style="color: rgb(255, 255, 255);"></i><span class="bold_text"> Silicon Valley, LA</span> 
+        </p>
+        <a class="mybutton" href="#openModal">REGISTER()</a>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" class="closebutton">X</a>
+            <h1>ONLINE REGISTRATION<br />
+              <div class="textarea_div"><span class="modal_span">&lt;name&gt; <textarea></textarea> &lt;/name&gt;</span><br/></div>
+              <div class="textarea_div"><span class="modal_span">&lt;school&gt; <textarea></textarea> &lt;/school&gt;</span><br/></div>
+              <div class="textarea_div"><span class="modal_span">&lt;email&gt; <textarea></textarea> &lt;/email&gt;</span><br/></div>
+              <a href="index.html" class="send_button">SEND!</a>
+              <p>*A registration link will be sent to the provided email address.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
+    <h2>SPEAKERS</h2>
+    <section id="cardcollection">
+      <div class="card">
+        <div class="circular_image">
+          <img alt="Elon Mush" src="eon.jpg">
+        </div>
+        <div class="signature">
+          <img alt="Elon Signature" src="elon.png">
+        </div>
+        <h3>Elon Musk </h3>
+        <h4>CEO, Tesla Inc.</h4>
+        <hr class="hr">
+        <p> South African-born American entrepreneur and businessman who founded X.com (which later became PayPal), SpaceX and Tesla Motors</p>
+        <section class="two_columns_social">
+          <a href="https://www.linkedin.com/company/tesla-motors/" class="fa fa-linkedin-square" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://www.tesla.com/careers" class="fa fa-facebook" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://www.tesla.com/careers" class="fa fa-rss" style="font-size:30px; margin: 0 auto; color: black;"></a>
+        </section>
+      </div>
+      <div class="card">
+        <div class="circular_image">
+          <img alt="Bill Gates" src="bill.jpg">
+        </div>
+        <div class="signature">
+          <img alt="Bill Gates Signature" class="signature" src="bill.png">
+        </div>
+        <h3>Bill Gates </h3>
+        <h4>American Entrepreneur</h4>
+        <hr class="hr">
+        <p>American computer programmer and entrepreneur who cofounded Microsoft Corporation, the world's largest PC software coop.</p>
+        <section class="two_columns_social">
+          <a href="https://www.linkedin.com/in/williamhgates/" class="fa fa-linkedin-square" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://tr-tr.facebook.com/BillGates" class="fa fa-facebook" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://www.microsoft.com/" class="fa fa-rss" style="font-size:30px; margin: 0 auto; color: black;"></a>
+        </section>
+      </div>
+      <div class="card">
+        <div class="circular_image">
+          <img alt="Jeff Bezos" src="jeff.jpg">
+        </div>
+        <div class="signature">
+          <img alt="Jeff Bezos Signature " class="signature" src="jeff.png">
+        </div>
+        <h3>Jeff Bezos </h3>
+        <h4>Founder of Amazon Inc.</h4>
+        <hr class="hr">
+        <p>American entrepreneur who played a key role in the growth of e-commerce as the founder and chief executive officer of Amazon.com, Inc.,</p>
+        <section class="two_columns_social">
+          <a href="https://www.linkedin.com/company/amazon/" class="fa fa-linkedin-square" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://tr-tr.facebook.com/Amazon/" class="fa fa-facebook" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://www.amazon.com" class="fa fa-rss" style="font-size:30px; margin: 0 auto; color: black;"></a>
+        </section>
+      </div>
+      <div class="card">
+        <div class="circular_image">
+          <img alt="Steve Jobs" src="steve.jpg">
+        </div>
+        <div class="signature">
+          <img alt="Steve Jobs Signature" class="signature" src="steve.png">
+        </div>
+        <h3>Steve Jobs </h3>
+        <h4>Founder of Apple Inc.</h4>
+        <hr class="hr">
+        <p>Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications. It is the best.</p>
+        <section class="two_columns_social">
+          <a href="https://www.linkedin.com/company/apple/" class="fa fa-linkedin-square" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://tr-tr.facebook.com/apple/" class="fa fa-facebook" style="font-size:30px; margin: 0 auto; color: black;"></a>
+          <a href="https://www.apple.com/careers/us/" class="fa fa-rss" style="font-size:30px; margin: 0 auto; color: black;"></a>
+        </section>
+      </div>
+    </section>
+    <section id="timetable" class="time-table">
+      <h2 class="second_header">SCHEDULE</h2>
+      <br />
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Event</th>
+        </tr>
+        <tr class="odd">
+          <td>10:00</td>
+          <td>Elon Musk - Time and Space Technologies with new coding styles</td>
+        </tr>
+        <tr class="even">
+          <td>11:00</td>
+          <td>Steve Jobs - How is mobile technologies affected by new coding styles?</td>
+        </tr>
+        <tr class="even">
+          <td>12:00</td>
+          <td>Lunch Break</td>
+        </tr>
+        <tr class="even">
+          <td>13:00</td>
+          <td>Jeff Bezos - New Amazon.inc with new coding styles of React</td>
+        </tr>
+        <tr class="even">
+          <td>14:00</td>
+          <td>Bill Gates - Computer Performance with ReactJS Runtimes</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+  </html>

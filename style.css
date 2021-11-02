@@ -1,0 +1,474 @@
+html, body	{
+	margin: 0;
+	padding: 0;
+  	font-family: "Lucida Console", Courier, monospace;
+	height: 100%;
+}
+body	{
+	background-color: rgba(248,248,248,1);
+}
+nav	{
+	width: 100%;
+	background-color: rgb(0 255 1);
+	box-shadow: 0 1px 12px rgba(0,0,0,0.15);
+	height: 42px;
+	position: fixed;
+	top: 0;
+}
+ul	{
+	text-align: center;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+li	{
+	display: inline;
+	color: rgba(0,0,0,0.4);
+	font-size: 12px;
+	font-weight: 600;
+	padding: 0 1%;
+}
+nav a	{
+	text-decoration: none;
+	color: rgb(2 2 2 / 40%);
+	transition: color 0.5s ease;
+}
+nav a:hover	{
+	color: rgba(255,255,255,255);
+}
+header	{
+	width: 100%;
+	min-height: 700px;
+	background-image: url('test_.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.header p	{
+	font-size: 0.9em;
+	line-height: 1.4em;
+	color: rgba(82,85,92,255);
+}
+header img	{
+	display: block;
+	margin: 0 auto;
+	padding-top: 63px;
+	width: 80px;
+}
+h1	{
+	font-size: 3em;
+	line-height: 1em;
+	color: rgba(0,255,1,255);
+	text-align: center;
+	margin: 0;
+	padding: 10% 6% 0 6%;
+}
+h2	{
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	color: rgba(82,85,92,255);
+	margin: 0;
+	padding: 36px 0 0 0;
+}
+h3	{
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 300;
+	color: rgba(82,85,92,255);
+	margin: 0;
+	padding: 24px 12px 0 12px;
+		text-align: center;
+
+}
+h4	{
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
+	color: rgba(82,85,92,255);
+	margin: 0;
+	padding: 12px 12px 0 12px;
+		text-align: center;
+}
+.hr{
+		margin-top: 10px;
+	  border: 3px solid rgba(0,255,1,255);
+	  width: 250px;
+}
+.card p	{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgba(82,85,92,255);
+	margin: 30px;
+	padding: 12px;
+	text-align: center;
+}
+#myborder	{
+	border-top: 1px solid rgba(122,131,153,0.25);
+	width: 70%;
+	margin: 1em auto;
+}
+.second_header{
+	color:  rgba(0,255,1,255);
+}
+.mybutton	{
+	font-size: 1.25em;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	background-color: rgba(0,255,1,255);
+	width: 8em;
+	margin-top: 10px;
+	margin-right: 12px;
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	padding: 0.5em;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+.mybutton:hover	{
+	background-color: rgba(255,255,255,255);
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+.signature{	
+	  margin:  0 auto;
+		width: 200px;
+		height: 50px;
+}
+.social_media{
+	width: 20px;
+	height: 20px;
+}
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1.0);
+  display:inline-block;
+  vertical-align:middle;
+  align-content: center;
+  margin: 0 auto;
+  margin-top:  10px;
+}
+.circular_image img{
+  width:100%;
+}
+
+.bold_text 	{
+	color:  rgb(147 147 147);
+	font-weight: 700;
+}
+.sub_header {
+	text-align: center;
+	color: rgb(147 147 147);
+}
+.two_columns	{
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+.two_columns_social	{
+	width: 30%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+.two_columns_dates	{
+	width: 30%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+.two_columns_dates	h4{
+		font-size: 16px;
+	line-height: 14px;
+	font-weight: 600;
+	color: rgba(82,85,92,255);
+	margin: 0;
+	padding: 12px 12px 0 12px;
+		text-align: left;
+}
+.column	{
+	display: flex;
+	flex-direction: column; /* contents appear top-to-bottom */
+	flex: 1; /* makes column widths the same = 1 */
+	margin: 1em 1em 0 1em;
+}
+#cardcollection	{
+	width: 96%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1.5% 2% 0 2%;
+}
+.linkedin{
+	width: 36px;
+	margin-left: 50px;
+}
+.card	{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: auto;
+	background-color: rgba(255,255,255,1);
+	margin: 1%;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+.card img	{
+	display: flex;
+	align-items: center;
+	width: 200px;
+	border-radius: 4px 4px 0 0;
+}
+
+#timetable	{
+	width: 100%;
+	margin-top: 40px;
+}
+table	{
+	width: 75%;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.87);
+	text-align: left;
+	margin: 0 auto;
+	border-spacing: 16px 16px; /* This is more like cell spacing */
+	background-color: rgba(0, 0, 0, 1.0);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+.r_align	{
+	text-align: right;
+}
+.gray_text 	{
+	color: rgba(0,0,0,0.41);
+}
+@media	(max-width: 840px)	{ /* tablets in general: 1260 * 2/3 */
+	.two_columns	{
+		width: 85%;
+	}
+	.card	{
+		flex-basis: 45%;
+	}
+	table	{
+		width: 93%;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+@media	(max-width: 630px)	{ /* 1260 / 2 */
+	.column	{
+		flex-basis: 90%; /* column becomes single-column */
+	}
+	header	{
+		background-image: url('test_light.jpg');
+	}
+	header p	{
+		color: rgba(122,131,153,0.9);
+		margin: 0;
+	}
+	h1	{
+		text-align: left;
+		padding-left: 10%;
+		padding-top: 63px; 
+	}
+	header > img	{
+		float: right;
+		width: 60px;
+		margin-right: 2em;
+	}
+	.card	{
+		flex-basis: 92%;
+	}
+	table	{
+		width: 100%;
+		box-shadow: none;
+		background-color: rgba(248,248,248,0);
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+@media (max-width: 420px )	{ /* 1260 / 3 */
+	header	{
+		height: auto;
+		padding-bottom: 3%;
+	}
+	header > img	{
+		float: none;
+		width: 120px;
+		margin: 0 auto;
+	}
+	header p	{
+		color: rgba(122,131,153,1);
+	}
+	table	{
+		font-size: 10px;
+		line-height: 14px;
+	}
+	h1	{
+		padding-top: 0;
+	}
+}
+.time-table {
+	width:100%;
+	margin:30px 0;
+	background-color: rgba(0,0,0,1);
+}
+.time-table table {
+	border-collapse:collapse;
+	width:50%;
+	margin:0 auto;
+	text-align:left;
+	font-size:16px;
+	line-height:24px;
+	color: rgb(255 248 248 / 87%);
+	background: rgba(0,0,0);
+	box-shadow:0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+.time-table table td {
+	border-bottom:1px solid #cccccc;
+	padding:10px;
+	text-align:left;
+}
+.time-table table th {
+	border-bottom:1px solid #cccccc;
+	padding:10px;
+	text-align:left;
+	transition: all 0.3s ease;
+}
+.time-table table th:hover	{
+	background-color: rgb(0 255 1);
+		color: rgb(0,0,0);
+
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+.time-table  tr.odd {
+	background: rgba(0,0,0,1);
+	transition: all 0.3s ease;
+}
+.time-table tr.odd:hover	{
+	background-color:  rgb(0 255 1);
+		color: rgb(0,0,0);
+
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+.time-table  tr.even {
+	background: rgba(0,0,0,1);
+	transition: all 0.3s ease;
+}
+.time-table tr.even:hover	{
+	background-color:  rgb(0 255 1);
+		color: rgb(0,0,0);
+
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+
+.modalDialog	{ /* this is the parent div */
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	overflow: auto; /* if we have excess content, this enables scrolling */
+	opacity: 0;
+	pointer-events: none; /* when the modal is invisible, mouse functionalities are disabled. */
+	transition: all 0.3s ease;
+}
+.modalDialog:target	{
+	opacity: 1; /* this makes the modal visible, on-click */
+	pointer-events: auto; /* gives back the mouse functionalities */
+}
+.modalDialog > div	{ /* this is a child selector, it only selects the direct child elements */
+	background-color: #fff;
+	width: 30%;
+	padding: 2% 4%;
+	margin: 10% auto;
+	border-radius: 30px;
+	position: relative; /* the positioning of this div itself is NOT relative. But the positioning of its' contents ARE relative to THIS div */
+}
+textarea	{
+	display: inline-block; /* by default they are inline */
+	width: 50%;
+	height: 16px;
+	font-size: 14px;
+	line-height: 13px;
+	font-weight: 300;
+	background-color: rgba(0, 0, 0, 0.05);
+	text-align: center;
+	margin: -5px auto;
+	outline: none;
+	border: none;
+	resize: none;
+}
+.modal_span {
+	font-size: 14px;
+	color: rgba(0,0,0, 1);
+}
+.closebutton	{
+	background-color: rgb(0 255 1);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: 40px;
+	width: 40px;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	transition: all 0.3s ease;
+}
+.textarea_div {
+	margin: 20px auto;
+}
+.closebutton:hover	{
+	background-color: #000;
+	box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+.modalDialog h1	{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 300;
+	color: rgba(122,131,153,1);
+	padding: 20px 0;
+}
+.send_button{
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	background-color: rgba(0,255,1,255);
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+.salmontext	{
+	color: rgb(0 255 1);
+}
+.modalDialog p {
+	font-size:  12px;
+	padding: 10px;
+}
+
+
