@@ -9,9 +9,9 @@ body	{
 }
 nav	{
 	width: 100%;
-	background-color: rgb(0 255 1);
+	background-color: rgb(7 157 7);
 	box-shadow: 0 1px 12px rgba(0,0,0,0.15);
-	height: 42px;
+	height: 37px;
 	position: fixed;
 	top: 0;
 }
@@ -38,7 +38,7 @@ nav a:hover	{
 header	{
 	width: 100%;
 	min-height: 700px;
-	background-image: url('test_.jpg');
+	background-image: url('test_.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -95,7 +95,7 @@ h4	{
 	width: 250px;
 }
 .header1 {
-	font-size: 2.75em;
+	font-size: 2.50em;
 	line-height: 1em;
 	color: rgba(0,255,1,255);
 	text-align: center;
@@ -181,6 +181,15 @@ h4	{
 	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
 }
 .two_columns_social	{
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+.two_columns_register	{
 	width: 30%;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -190,7 +199,7 @@ h4	{
 	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
 }
 .two_columns_dates	{
-	width: 30%;
+	width: 70%;
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
@@ -263,76 +272,32 @@ table	{
 .gray_text 	{
 	color: rgba(0,0,0,0.41);
 }
-@media	(max-width: 840px)	{ /* tablets in general: 1260 * 2/3 */
-	.two_columns	{
-		width: 85%;
-	}
-	.card	{
-		flex-basis: 45%;
-	}
-	table	{
-		width: 93%;
-		font-size: 14px;
-		line-height: 18px;
-	}
-}
-@media	(max-width: 630px)	{ /* 1260 / 2 */
-	.column	{
-		flex-basis: 90%; /* column becomes single-column */
-	}
-	header	{
-		background-image: url('test_light.jpg');
-	}
-	header p	{
-		color: rgba(122,131,153,0.9);
-		margin: 0;
-	}
-	h1	{
-		text-align: left;
-		padding-left: 10%;
-		padding-top: 63px; 
-	}
-	header > img	{
-		float: right;
-		width: 60px;
-		margin-right: 2em;
-	}
-	.card	{
-		flex-basis: 92%;
-	}
-	table	{
-		width: 100%;
-		box-shadow: none;
-		background-color: rgba(248,248,248,0);
-		font-size: 12px;
-		line-height: 16px;
-	}
-}
-@media (max-width: 420px )	{ /* 1260 / 3 */
-	header	{
-		height: auto;
-		padding-bottom: 3%;
-	}
-	header > img	{
-		float: none;
-		width: 120px;
-		margin: 0 auto;
-	}
-	header p	{
-		color: rgba(122,131,153,1);
-	}
-	table	{
-		font-size: 10px;
-		line-height: 14px;
-	}
-	h1	{
-		padding-top: 0;
-	}
-}
+
 .time-table {
 	width:100%;
 	margin: 0;
 	background-color: rgba(0,0,0,1);
+}
+.fa {
+  padding: 9px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 2px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: black;
+  color: white;
+}
+.fa-linkedin{
+	background: black;
+  color: white;
+}
+.fa-rss{
+	background: black;
+  color: white;
 }
 .time-table table {
 	border-collapse:collapse;
@@ -347,12 +312,13 @@ table	{
 	border-radius: 4px;
 }
 .time-table table td {
-	border-bottom:1px solid #cccccc;
+	border-bottom:1px solid #cccccca3;
 	padding:10px;
 	text-align:left;
 }
 .time-table table th {
-	border-bottom:1px solid #cccccc;
+
+	border-bottom:1px solid #cccccca3;
 	padding:10px;
 	text-align:left;
 	transition: all 0.3s ease;
@@ -506,4 +472,235 @@ textarea	{
 	align-items: center;
 	margin-bottom: 10px;
   filter: invert(100%);
+}
+
+@media (max-width: 840px)
+{
+	.header1 {
+		font-size: 1.6em;
+		line-height: 1em;
+		color: rgba(0,255,1,255);
+		text-align: center;
+		margin: 0;
+		padding: 10% 6% 0 6%;
+	}
+	.two_columns	{
+	width: 76%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+	}
+	.two_columns_dates	{
+	width: 87%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+	margin-left: 63px;
+	}
+	header	{
+	width: 100%;
+	min-height: 540px;
+	background-image: url('test_.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.googlemap {
+	margin-left: 25%;
+	border: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 52%;
+	align-items: center;
+	margin-bottom: 10px;
+  filter: invert(100%);
+}
+.marginText{
+	margin:  10px auto;
+}
+.two_columns_register	{
+	width: 46%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+}
+@media (max-width: 630px) {
+
+.two_columns_social	{
+	width: 45%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+   .header1 {
+		font-size: 1.3em;
+		line-height: 1em;
+		color: rgba(0,255,1,255);
+		text-align: center;
+		margin: 0;
+		padding: 10% 6% 0 6%;
+	}
+	.two_columns	{
+	width: 76%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+	}
+	.two_columns_dates	{
+	width: 95.4%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+	}
+	header	{
+	width: 100%;
+	min-height: 500px;
+	background-image: url('test_.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.googlemap {
+	margin-left: 15%;
+	border: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 70%;
+	align-items: center;
+	margin-bottom: 10px;
+  filter: invert(100%);
+}
+.card p	{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgba(82,85,92,255);
+	margin: 15px;
+	padding: 12px;
+	text-align: center;
+}
+.time-table table {
+	border-collapse:collapse;
+	width:70%;
+	margin:0 auto;
+	text-align:left;
+	font-size:16px;
+	line-height:24px;
+	color: rgb(255 248 248 / 87%);
+	background: rgba(0,0,0);
+	box-shadow:0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+.marginText{
+	margin:  10px auto;
+}
+}
+@media (max-width: 420px) {
+
+    nav	{
+	width: 100%;
+	background-color: rgb(7 157 7);
+	box-shadow: 0 1px 12px rgba(0,0,0,0.15);
+	height: 25px;
+	position: fixed;
+	top: 0;
+}
+ul	{
+	text-align: center;
+	padding: 0;
+	margin: 3px 0 0 0;
+}
+.header1 {
+		font-size: 0.8em;
+		line-height: 1em;
+		color: rgba(0,255,1,255);
+		text-align: center;
+		margin: 0;
+		padding: 14% 6% 0 6%;
+	}
+	li	{
+	display: inline;
+	color: rgba(0,0,0,0.4);
+	font-size: 8px;
+	font-weight: 600;
+	padding: 0 1%;
+}
+.sub_header {
+	font-size: 12px;
+	line-height: 1.5em;
+	text-align: center;
+	color: rgb(147 147 147);
+}
+.bold_text 	{
+	font-size: 8px;
+	color:  rgb(147 147 147);
+	font-weight: 700;
+}
+	.two_columns_dates	{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+	}
+	.two_columns_register	{
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+.mybutton	{
+	font-size: 0.8em;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	background-color: rgba(0,255,1,255);
+	width: 8em;
+	margin-top: 10px;
+	margin-right: 12px;
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	padding: 0.5em;
+	border-radius: 4px;
+	transition: all 0.3s ease;
+}
+header	{
+	width: 100%;
+	min-height: 400px;
+	background-image: url('test_.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.two_columns_social	{
+	width: 37%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0;
+	display: flex;
+	flex-direction: row; /* so that the columns appear side-by-side */
+	flex-wrap: wrap; /* columns drop side-to-bottom when needed */
+}
+
 }

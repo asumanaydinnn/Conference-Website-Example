@@ -1,0 +1,8 @@
+map 
+
+
+sorulacaklar
+
+hero image düzeltmesi
+ortadaki yazıların align edilmesi
+sosyal medya butonlar
